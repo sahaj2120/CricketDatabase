@@ -1,466 +1,213 @@
-<html>
-
+<!doctype html>
+<html lang="en">
+  
+  
 	<head>
+   
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
 		
+	<title>Cricket Database</title>
 	
 	
-		<title>CRICKET DATABASE</title>
-		
 		<style type="text/css">
 		
-			#topbar {
-			
-				width:100%;
-				background-color:#00b4ff;
-				margin:0 auto;
-				float:left;
-				height:44px;
-				
-			
-			}
 		
-			body {
-			
-				margin:0;
-				padding:0;
-			
-			}
-			
-			#logo {
-			
-				float:left;
-			
-			}
-			
-			#menu {
-			
-				
-			
-			}
-			
-			.topbarsection {
-			
-				float:left;
-				height:100%;
-				color:white;
-				font-weight: bold;
-				font-size:100%;
-				margin-top:13px;
-				margin-left:50px;
-				
 		
-			}
-			
-			.topbarsection a {
-			
-					color:white;
-					text-decoration:none;
-			
-			}
-			
-			.topbarsection a:hover {
-			
-				text-decoration:underline;
-			}
-			
-			#search {
-			
-				float:left;
-				border:none;
-				font-weight:bold;
-				font-size:15px;
-				background-color:white;
-				margin-left:50px;
-				margin-top:8px;
-				margin-bottom:8px;
-				padding:5px;
-			
-			}
-			
-			#searchicon {
-			
-				float:left;
-				background-color:white;
-				height:27.2px;
-				margin-top:8px;
-			
-			}
-			
-			.class {
-			
-				clear:both;
-			
-			}
-			
-			#menubar {
-			
-				width:100%;
-				background-color:#008EFF;
-				height:110px;
-			
-			}
-			
-			#menubarnews {
-			
-				width:100%;
-				margin:0 auto;
-			
-			}
 		
-			h1 {
+			.container {
 			
 				text-align:center;
-				padding:0;
-				margin:0;
-				font-size:50px;
-				color:white;
-				padding-top:40px;
+				background-color:
+				
+			
 			
 			
 			}
 			
+			h5 a {
 			
-			.class {
-			
-				clear:both;
-			
-			}
-			
-			
-			#pagecontainer {
-			
-				width:1000px;
-				background-color:white;
-				margin:0 auto;
-				height:500px;
-				float:left;
-				margin-top:15px;
-				margin-left:25px;
-				
-				
-				
-			
-			}
-			
-			h2 {
-			
-				
-				font-size:50px;
-				text-align:left;
-				width:500px;
-				
-			
-			}
-			
-			h2 a {
-			
-				text-decoration:none;
 				color:black;
 			
+			
 			}
 			
-			h2 a:hover {
-				 
-				 
-				 color:#00b4ff;
-				 
-			 
+			h5 a:hover {
+			
+				color:#00b4ff;
+				text-decoration:none;
+			
 			}
 			
-			#news {
+			h6 {
 			
-				width:450px;
-				height:400px;
-				float:right;
-				margin-right:50px;
-				margin-top:5px;
-				
+				text-align:center;
+			
 			}
 			
-			h4  {
+			h6 a:hover {
 			
-				font-size:25px;
-			}
-			
-			
-			h4 a {
-			
+				color:#00b4ff;
 				text-decoration:none;
 			
 			}
 			
 			
-			
-			
-			h4 a:hover {
-			
-				color:#00b4ff;
-			
-			}
-			
-			
-			
-			#pagecontainer1 {
-			
-				width:1000px;
-				background-color:white;
-				margin:0 auto;
-				height:500px;
-				float:left;
-				margin-top:15px;
-				margin-left:25px;
-				
-				
-				
-			
-			}
-			
-			#mainarticle1 {
-			
-			
-			
-			}
 		
-			#nesw1 {
-			
-				width:450px;
-				height:400px;
-				float:right;
-				margin-right:50px;
-				margin-top:5px;
-			
-			}
-		
-			#pagecontainer2 {
-			
-				width:1000px;
-				background-color:white;
-				margin:0 auto;
-				height:500px;
-				float:left;
-				margin-top:15px;
-				margin-left:25px;
-				
-				
-				
-			}
-			
-			#mainarticle2 {
-			
-			
-			
-			}
-		
-				#nesw2 {
-			
-				width:450px;
-				height:400px;
-				float:right;
-				margin-right:50px;
-				margin-top:5px;
-			
-			}
-			
-			
-			#pagecontainer3 {
-			
-				width:1000px;
-				background-color:white;
-				margin:0 auto;
-				height:500px;
-				float:left;
-				margin-top:15px;
-				margin-left:25px;
-				
-				
-				
-			}
-			
-			#mainarticle3 {
-			
-			
-			
-			}
-		
-			#nesw3 {
-			
-				width:450px;
-				height:400px;
-				float:right;
-				margin-right:50px;
-				margin-top:5px;
-			
-			}
-		
-		
-			#pagecontainer4 {
-			
-				width:1000px;
-				background-color:white;
-				margin:0 auto;
-				height:500px;
-				float:left;
-				margin-top:15px;
-				margin-left:25px;
-				
-				
-				
-			}
-			
-			#mainarticle4 {
-			
-			
-			
-			}
-		
-			#nesw4 {
-			
-				width:450px;
-				height:400px;
-				float:right;
-				margin-right:50px;
-				margin-top:5px;
-			
-			}
 		
 		
 		
 		</style>
-	
+ 
+
 	</head>
-
-	<body style="background-color:#EAEDF0">
-				
-		<div id="topbar"> 
-		
-			<a href="index.html"><img id="logo" src="images\logo.png"></a>
-			
-			<div id="menu" class="topbarsection">
-			
-				<a href="History.html">History Of Indian Cricket</a>
-			
-			</div>
-			
-			<div id="menu" class="topbarsection">
-			
-				<a href="WorldCupVideos.html">World Cup Videos</a>
-				
-			</div>
-			
-			<div id="menu" class="topbarsection">
-			
-				<a href="">T20	Videos</a>
-			
-			</div>
-			
-				<div id="menu" class="topbarsection">
-			
-				<a href="Players.html">Players</a>
-			
-			</div>
-			
-			<div class"topbarsection">
-			
-				<input id="search" type="text" placeholder="Search For Any Player">
-				<input type="image" id="searchicon" src="images\searchicon.png">
-			
-			</div>
-		
-		</div>				
 	
-		<div class="claer"></div>
+	
+	
+	<body>
+    
+		<nav class="navbar navbar-dark bg-dark">
+			<a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+		<li class="nav-item active">
+        <a class="nav-link" href="history.html">History Of Indian Cricket <span class="sr-only">(current)</span></a>
+		</li>
+		<li class="nav-item">
+        <a class="nav-link" href="WorldCupVideos.html">World Cup Videos</a>
+		</li>
+		<li class="nav-item">
+        <a class="nav-link" href="t20videos.html">T20 Videos</a>
+		</li>
+		<li class="nav-item">
+        <a class="nav-link" href="players.html">ODI Players</a>
+		</li>
+		</ul>
+		<form class="form-inline my-2 my-lg-0">
+		<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		</form>
+		</div>
+	</nav>
+ 
 		
-		<div id="menubar">
 		
-			<div id="menubarnews">
-			
-					<h1>CRICKET NEWS</h1>
+			<div class="content">
+		
+			<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+			<h1 class="display-4">Cricket News</h1>
 			
 			</div>
 		
-		</div>
-		
-		<div class="clear"></div>
-		
-		<div id="pagecontainer">
-		
-			<div id="mainarticle">
-				
-				<a href="https://shrinke.me/hardik_lasith"><img id="news" src="images\1stnews.jpg"></a>
-				<h2><a href="https://shrinke.me/hardik_lasith">"Happy Birthday Legend": Hardik Pandya Wishes Mumbai Indians Teammate Lasith Malinga</a></h2>
-				<h4 align="left"><a href="https://sports.ndtv.com/ipl-2020/on-lasith-malingas-birthday-hardik-pandya-wishes-the-legend-2286686"> Read More </a></h4>
-				
-				
-			</div>
-				
-		</div>
-		
-		
-		<div id="pagecontainer1">
-			
-			<div id="mainarticle1">
-			
-				<img id="nesw1" src="images\rcb.png">
-				<h2><a href="https://shrinke.me/rcb">IPL 2020: Royal Challengers Bangalore Share Picture Showing Bond Amongst Leadership Group</a></h2>
-				<h4 align="left"><a href="https://sports.ndtv.com/ipl-2020/ipl-2020-royal-challengers-bangalore-share-picture-of-leadership-group-bonding-2286738">Read More</a></h4>
-		
-			</div>
-		
-		</div>
-
-		<div id="pagecontainer2">
-			
-			<div id="mainarticle2">
-			
-				<img id="nesw2" src="images\kohli.png">
-				<h2><a href="https://shrinke.me/kohli">"Good Vibes Only": Virat Kohli, Other RCB Stars Enjoy Some Downtime After Quarantine</a></h2>
-				<h4 align="left"><a href="https://sports.ndtv.com/ipl-2020/virat-kohli-other-royal-challengers-bangalore-stars-enjoy-downtime-in-dubai-after-quarantine-2286735">Read More</a></h4>
-
 			</div>
 			
-		</div>
+			
+			<div class="container">
+			
+				<div class="row row-cols-1 row-cols-md-2">
+					<div class="col mb-4">
+					<div class="card">
+					<img src="images/csk.png" class="card-img-top">
+					<div class="card-body">
+					<h5 class="card-title"><a href="https://shrinke.me/csk">IPL 2020: Chennai Super Kings extend quarantine, to train from September 1</a></h5>
+					<h6><a href="https://www.espncricinfo.com/story/_/id/29757717/ipl-2020-csk-extend-quarantine,-train-september-1">Read More</a></h6>
+					
+				</div>
+				</div>
+				</div>
+				<div class="col mb-4">
+					<div class="card">
+					<img src="images/1stnews.jpg" class="card-img-top">
+					<div class="card-body">
+					<h5 class="card-title"><a href="https://shrinke.me/hardik_lasith">Happy Birthday Legend": Hardik Pandya Wishes Mumbai Indians Teammate Lasith Malinga</a></h5>
+					<h6><a href="https://sports.ndtv.com/ipl-2020/on-lasith-malingas-birthday-hardik-pandya-wishes-the-legend-2286686">Read More</a></h6>
+						
+				</div>
+				</div>
+				</div>
+				<div class="col mb-4">
+					<div class="card">
+					<img src="images/rcb.png" class="card-img-top">
+					<div class="card-body">
+					<h5 class="card-title"><a href="https://shrinke.me/rcb">: Royal Challengers Bangalore Share Picture Showing Bond Amongst Leadership Group</a></h5>
+					<h6><a href="https://sports.ndtv.com/ipl-2020/ipl-2020-royal-challengers-bangalore-share-picture-of-leadership-group-bonding-2286738">Read More</a></h6>
+					
+				</div>
+				</div>
+				</div>
+				<div class="col mb-4">
+					<div class="card">
+					<img src="images/kohli.png" class="card-img-top">
+					<div class="card-body">
+					<h5 class="card-title"><a href="https://shrinke.me/kohli">Virat Kohli, Other RCB Stars Enjoy Some Downtime After Quarantine</a></h5>
+					<h6><a href="https://sports.ndtv.com/ipl-2020/virat-kohli-other-royal-challengers-bangalore-stars-enjoy-downtime-in-dubai-after-quarantine-2286735">Read More</a></h6>
+					
+				</div>
+				</div>
+				</div>
+				</div>
+			
+			</div>		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 		
 		
-		<div id="pagecontainer3">
-			
-			<div id="mainarticle3">
-			
-				<img id="nesw3" src="images\csk.png">
-				<h2><a href="https://shrinke.me/csk">IPL 2020: Chennai Super Kings extend quarantine, to train from September 1</a></h2>
-				<h4 align="left"><a href="https://www.espncricinfo.com/story/_/id/29757717/ipl-2020-csk-extend-quarantine,-train-september-1">Read More</a></h4>
-
-			</div>
-			
-		</div>
-
-
-		<div id="pagecontainer4">
-			
-			<div id="mainarticle4">
-			
-				<img id="nesw4" src="images\rahane.png">
-				<h2><a href="https://shrinke.me/rahane">Rahane open for middle-order role at Delhi Capitals</a></h2>
-				<h4 align="left"><a href="https://www.cricbuzz.com/cricket-news/113952/ajinkya-rahane-ipl-2020-delhi-capitals-rajasthan-royals">Read More</a></h4>
-
-			</div>
-			
-		</div>
-
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<!-- Right Side Ad -->
-				<ins class="adsbygoogle"
-   				  style="display:block"
-   				  data-ad-client="ca-pub-1932272581252981"
-   				  data-ad-slot="4254838612"
-   				  data-ad-format="auto"
-   				  data-full-width-responsive="true"></ins>
-		<script>
-     					(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
 		
-		<script data-ad-client="ca-pub-1932272581252981" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+ 
 	</body>
+
+
 
 </html>
